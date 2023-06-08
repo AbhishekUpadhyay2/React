@@ -1,0 +1,24 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;   
+}
+.nav-items{
+    padding: 0px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.nav-items>ul{
+    display: flex;
+    list-style: none;
+}
+.nav-items>ul>li{
+    margin:5px;
+    padding:5px;
+}
+.logo{
+    width:100px;
+    height: 100px;
+}
