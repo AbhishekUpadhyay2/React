@@ -1,11 +1,17 @@
-import React from 'react'
+/** @format */
 
+import React from "react";
+import { LOGO_URL } from "../../locale/url";
 const Logo = () => {
-  return (
-    <div className='logo-container'>
-      <img className='logo' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjNfydBcY6mBLVm0goD73pk1aGfIweGaM4_w&usqp=CAU" alt="food app" />
-    </div>
-  )
-}
+	return (
+		<div className='logo-container'>
+			<img
+				className='logo'
+				src={LOGO_URL}
+				alt='food app'
+			/>
+		</div>
+	);
+};
 
-export default Logo
+export default Logo;

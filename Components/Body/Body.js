@@ -1,15 +1,17 @@
-import React from 'react'
-import Search from './Search'
-import CardContainer from './CardContainer'
-import './Body.css'
+/** @format */
+
+import React from "react";
+import Search from "./Search";
+import CardContainer from "./CardContainer";
+import "./Body.css";
 
 const Body = () => {
-  return (
-    <div className='body'>
-      <Search/>
-      <CardContainer/>
-    </div>
-  )
-}
+	return (
+		<div className='body'>
+			<Search />
+			<CardContainer />
+		</div>
+	);
+};
 
-export default Body
+export default Body;

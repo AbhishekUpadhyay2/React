@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM, {createRoot}  from 'react-dom/client';
-import Header from './Components/Header/Header';
-import Body from './Components/Body/Body';
+import WelcomeComponent from './Components/Header/Welcome';
 
 /** Food Ordering App
  * Header
@@ -17,12 +16,7 @@ import Body from './Components/Body/Body';
  *  --links
  */
 
-const WelcomeComponent=()=>(
-    <div className='app'>
-        <Header/>
-        <Body/>
-    </div>
-)
+
 const Applayout=()=><div><WelcomeComponent/></div>
 const root=createRoot(document.getElementById("root"));
 root.render(<Applayout/>);
