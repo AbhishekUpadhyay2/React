@@ -10,6 +10,7 @@ const Logo = () => {
 				src={LOGO_URL}
 				alt='food app'
 			/>
+			<span className='appname'>GreatFood.com</span>
 		</div>
 	);
 };

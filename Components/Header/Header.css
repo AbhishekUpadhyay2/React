@@ -45,3 +45,11 @@
     padding:0 20px;
     cursor: pointer;
 }
+.link-cls{
+    text-decoration:none;
+}
+.appname{
+     position: absolute;
+    top: 2rem;
+    padding-left: 1rem;
+}

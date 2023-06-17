@@ -13,11 +13,27 @@ const NavItems = () => {
 	return (
 		<div className='nav-items'>
 			<ul>
-				<li>Home</li>
 				<li>
-					<a href='/about'>About Us</a>
+					<Link
+						className='link-cls'
+						to={"/"}>
+						Home
+					</Link>
 				</li>
-				<li>Contact us</li>
+				<li>
+					<Link
+						className='link-cls'
+						to='/about'>
+						About Us
+					</Link>
+				</li>
+				<li>
+					<Link
+						className='link-cls'
+						to={"/contact"}>
+						Contact us
+					</Link>
+				</li>
 				<li>Cart</li>
 				<button
 					className='login'
