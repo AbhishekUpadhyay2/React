@@ -38,6 +38,10 @@
     padding:5px;
 }
 .logo{
-    width:100px;
-    height: 100px;
+    width: 90px;
+     height: 80px;
+}
+.login{
+    padding:0 20px;
+    cursor: pointer;
 }

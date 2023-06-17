@@ -1,6 +1,6 @@
 /** @format */
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "./Logo";
 import NavItems from "./NavItems";
 import "./Header.css";
