@@ -6,9 +6,11 @@ import data from "../../locale/data.json";
 import { useSelector, useDispatch } from "react-redux";
 import { topRatedResturant } from "../Redux/Reducers/topRatedRes";
 import Shimmer from "./Shimmer";
+import useOnlineStatus from "../customHooks/useOnlineStatus";
 
 const CardContainer = ({ resturantList, showNoData }) => {
 	const [restaurantdata, setRestaurantdata] = useState([]);
+	const isOnline = useOnlineStatus();
 	useEffect(() => {
 		setRestaurantdata(resturantList);
 	}, [resturantList]);
@@ -20,6 +22,10 @@ const CardContainer = ({ resturantList, showNoData }) => {
 			<Shimmer />
 		);
 	}
+
+	//console.log(isOnline);
+	if (!isOnline) return <h2>Check your internet connection...</h2>;
+
 	return (
 		<div className='card-container'>
 			{restaurantdata?.map?.((d, i) => (
@@ -31,6 +37,7 @@ const CardContainer = ({ resturantList, showNoData }) => {
 					rating={d.data.avgRating}
 					eta={d.data.slaString}
 					amountfor2={d.data.costForTwoString}
+					resId={d.data.id}
 				/>
 			))}
 		</div>

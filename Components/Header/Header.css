@@ -53,3 +53,16 @@
     top: 2rem;
     padding-left: 1rem;
 }
+.round{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+.green{
+    background-color: green;
+    border-color: green;
+}
+.red{
+    background-color: red;
+    border-color: red;
+}

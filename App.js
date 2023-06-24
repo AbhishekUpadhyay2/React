@@ -8,6 +8,7 @@ import About from "./Components/About";
 import Contact from "./Components/Contact/Contact";
 import Error from "./Components/Error";
 import Body from "./Components/Body/Body";
+import ResturantMenu from "./Components/Body/ResturantMenu";
 
 /** Food Ordering App
  * Header
@@ -32,12 +33,13 @@ const Applayout = () => (
 const appRouter = createBrowserRouter([
 	{
 		path: "/",
-		element: <WelcomeComponent />,
+		element: <Applayout />,
 		errorElement: <Error />,
 		children: [
 			{ path: "/about", element: <About /> },
 			{ path: "/contact", element: <Contact /> },
 			{ path: "/", element: <Body /> },
+			{ path: "/resturants/:resId", element: <ResturantMenu /> },
 		],
 	},
 ]);

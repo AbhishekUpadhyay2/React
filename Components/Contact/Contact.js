@@ -4,7 +4,7 @@ import React from "react";
 
 const Contact = () => {
 	return (
-		<div>
+		<div className='body'>
 			<h3>Contact us Page</h3>
 		</div>
 	);
